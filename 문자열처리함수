@@ -1,0 +1,17 @@
+python = "Python is Amazing"
+print(python.lower()) # 소문자로 출력
+print(python.upper()) # 대문자로 출력
+print(python[0].isupper()) # 첫 번째 문자가 대문자인지 확인
+print(len(python)) # 문자열 길이
+print(python.replace("Python", "Java")) # 문자열 대체
+
+index = python.index("n") # n이 처음으로 나온 위치 반환
+print(index)
+index = python.index("n", index + 1) # 두 번째 n이 나온 위치 반환
+print(index)
+
+print(python.find("Java")) # 문자열 찾기, 없으면 -1 반환
+#print(python.index("Java")) # 문자열 찾기, 없으면 오류 발생
+print("hi") # 오류가 발생하면 이 코드는 실행되지 않음
+
+print(python.count("n")) # 문자열 내 n의 개수 반환
