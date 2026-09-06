@@ -1,3 +1,4 @@
+# %%
 #quiz 2
 #당신은 최근에 코딩 스터디 모임을 새로 만들었습니다.
 #월 4회 스터디를 하는데 3번은 온라인으로 하고 1번은 
@@ -12,10 +13,10 @@
 #오프라인 스터디 모임 날짜는 매월 x일로 선정되었습니다.
 
 from random import *
-
+# %%
 date = randint(4,28)
 print("오프라인 스터디 모임 날짜는 매월" + str(date) + "일로 선정되었습니다.")
-
+# %%
 #quiz 3
 #사이트별로 비밀번호를 만들어 주는 프로그램을 작성하시오.
 #예시 : http://naver.com
@@ -28,9 +29,10 @@ print("오프라인 스터디 모임 날짜는 매월" + str(date) + "일로 선
 # 내가 쓴 풀이
 site = "http://naver.com"
 print(site[-9:-4]) 
+# %%
 site = site[-9:-4]
 print(site[:3]+str(len(site))+str(site.count("e"))+"!")
-
+# %%
 # 강사님 풀이
 url = "http://naver.com"
 my_str = url.replace("http://","") # 규칙 1 수행
@@ -73,20 +75,23 @@ print(url[:3] + str(len(url)) + str(url.count("e")) + "!")
 # print(sample(lst, 1))
 
 
-
+# %%
 # 강사님 풀이
 from random import *
 users = range(1, 21) # 1부터 20까지 숫자를 생성
 # 하지만 range는 list type이 아니기 때문에
 users = list(users) #리스트로 변환하면 됨
-
+# %%
 shuffle(users)
-
+print(users)
+# %%
 winners = sample(users, 4) # 중복 가능성이 있기 때문에 우선 4명을 먼저 추첨
 # 4명 중에서 1명은 치킨, 3명은 커피
-
+# %%
 
 print("-- 당첨자 발표 --")
 print("치킨 당첨자 : {0}".format(winners[0])) # 먼저 추첨한 4명 중 첫번째
+# %%
 print("커피 당첨자 : {0}".format(winners[1:])) # 제외한 나머지
 print("-- 축하합니다 --")
+# %%
