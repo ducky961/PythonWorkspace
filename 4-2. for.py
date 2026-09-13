@@ -24,7 +24,7 @@ for waiting_no in [0, 1, 2, 3, 4]:
 # 대기번호 : 4 이렇게 나온다.
 
 # randrange()를 응용
-for waiting_no in randrange(5): # 0, 1, 2, 3, 4
+for waiting_no in range(5): # 0, 1, 2, 3, 4
 # 1,2,3,4,5 까지만 출력하고 싶다면?
 # for waiting_no in randrange(1,6): <- 이렇게
 	print("대기번호 : {0}".format(waiting_no))
