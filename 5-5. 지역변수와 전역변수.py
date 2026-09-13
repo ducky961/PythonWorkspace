@@ -1,3 +1,22 @@
+# 지역변수 : 함수 내에서만 쓸 수 있는 변수
+# 전역변수 : 프로그램 내에서 어디서든 부를 수 있는 변수
+
+# gun = 10 
+
+# def checkpoint(soldiers): # 경계근무
+#	gun = gun - soldiers
+#	print("[함수 내] 남은 총 : {0}".format(gun))
+# 사실 상 checkpoint 라는 함수 내에 gun에 대한 유효한 정보가 없음
+
+# print("전체 총 : {0}".format(gun))
+# checkpoint(2) # 2명이 경계 근무 나감
+# print("남은 총 : {0}".format(gun))
+
+# 실행 시 오류가 남
+# gun이라는 함수는 할당(값이 설정)도 안되었는데 사용이 되었다고 오류남
+
+
+
 gun = 10 # gun이라는 변수를 정의
 
 def checkpoint(soldiers):
